@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    padding: 15px;
+    background: #f8f8f8;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #666;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f1f1f1;
+}
+
+.search-bar {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.image-box {
+    padding-top: 15%;
+    padding-left: 15%;
+    position: relative;
+    width: 300px;
+}
+
+.image-box2 {
+    width: 300px;
+    position: relative;
+}
+
+.image-box3 {
+    width: 100px;
+    position: relative;
+}
+
+.image-box, .image-box2, .image-box3 {
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .image-box:hover img,
+  .image-box2:hover img,
+  .image-box3:hover img {
+    transform: translateX(10px); /* Move the image 10px to the right on hover */
+  }
+
+.descreview{
+    margin-top: 30px;
+}
+
+.hall-of-fame {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vote-btn {
+    padding: 10px 20px;
+    background: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reviews {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.review-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.review-avatar {
+    width: 100px;
+    position: relative;
+}
+
+.plans {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.plan-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.plan-box h3 {
+    margin-bottom: 10px;
+}
+
+.plan-box ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.plan-box li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-box button {
+    padding: 10px 30px;
+    background: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footerimg{
+    width: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hall-of-fame {
+        grid-template-columns: 1fr;
+    }
+}
